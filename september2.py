@@ -40,9 +40,11 @@ def get_threes(num):
     else:
         return(False)
 
-test = [get_threes(i) for i in range(72,1000)]
+# find all possible numbers that could meet this set of conditions
+# (unique highest age for non-unique sum of ages, all ages < 19, ages factors of number)
+test = [get_threes(i) for i in range(72,18**3)]
 for i in range(len(test)):
     if test[i] == True:
         print i + 72
 
-# 288 is the next largest value for which this condition holds, then 576
+# 288 is the next largest value for which this condition holds, then 576 and 1800
