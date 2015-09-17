@@ -55,3 +55,5 @@ test = [get_threes(i) for i in range(72,1000)]
 for i in range(len(test)):
     if test[i] == True:
         print i + 72
+
+# 288 is the next largest value for which this condition holds, then 576
